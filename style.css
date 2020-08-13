@@ -5,21 +5,10 @@
 }
 
 body {
-  /* background-color: pink; */
   font-family: 'AnonymousPro';
   margin: 0;
   padding: 0;
   cursor: url('https://cur.cursors-4u.net/nature/nat-2/nat112.cur'), auto !important;
-}
-
-h1 {
-  position: fixed;
-  font-size: 3em;
-  font-style: italic;
-}
-
-p {
-  font-size: 2em;
 }
 
 .center {
@@ -27,7 +16,7 @@ p {
   margin: auto;
 }
 
-/************ PAGE 1 **************/
+/************ PUTRI MALU **************/
 
 .page-one {
   background-image: url('bg/putrimalu4.gif');
@@ -57,7 +46,7 @@ p {
   /* z-index: 1; */
 }
 
-/************ PAGE 2 **************/
+/************ DEER FLYING BUTTERFLY **************/
 
 .page-two {
   background-image: url('bg/butterflies3.gif');
@@ -73,7 +62,7 @@ p {
   bottom: 0;
 }
 
-/************ PAGE 3 **************/
+/************ SUNNY DAY **************/
 
 .page-three {
   background-image: url('bg/sunnyday2.gif');
@@ -83,18 +72,23 @@ p {
   margin-top: 15vh;
 }
 
-/************ PAGE 4 **************/
+/************ CLOTHESLINE ENTRY **************/
 
 .page-four {
+  background-color: pink;
   background-image: url('bg/clothesline-in-front-of-house.gif');
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100vh;
   /* padding: 0; */
   margin-top: 15vh;
 }
 
-
-/************ PAGE 5 **************/
+#drip {
+  top: 0;
+  position: absolute;
+}
+/************ WATEER **************/
 
 .page-five {
     background-color: black;
@@ -124,4 +118,47 @@ p {
 #rundeer {
   position: absolute;
   width: 20%;
+  z-index: 2;
+}
+
+/************ Title **************/
+.title-pg {
+  background-color: #111;
+
+  text-align: center;
+}
+
+.title-pg h1 {
+  margin: 0;
+  color: pink;
+  font-size: 5em;
+  font-family: 'Esteban', serif;
+  font-weight: normal;
+}
+
+.centerbox {
+  padding: 40px;
+  /* margin: auto; */
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
+  width: 400px;
+
+  border: 1px solid pink;
+  box-shadow: 0 0 8px pink;
+
+}
+
+.centerbox p {
+  color: white;
+}
+
+/************ LIGHTHOUSE **************/
+.lighthouse {
+  background-image: url('bg/lighthouse.gif');
+  background-size: cover;
+  width: 100vh;
+  margin: 0 auto;
+  /* padding: 0; */
 }
