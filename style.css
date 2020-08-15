@@ -1,4 +1,8 @@
 /************ WORLD **************/
+html {
+  cursor: url('https://cur.cursors-4u.net/nature/nat-2/nat112.cur'), auto !important;
+}
+
 @font-face {
   font-family: 'AnonymousPro';
   src: url('fonts/AnonymousPro-Regular.ttf')
@@ -8,7 +12,6 @@ body {
   font-family: 'AnonymousPro';
   margin: 0;
   padding: 0;
-  cursor: url('https://cur.cursors-4u.net/nature/nat-2/nat112.cur'), auto !important;
 }
 
 .center {
@@ -23,12 +26,14 @@ body {
   background-size: cover;
   height: 100vh;
   /* padding: 0; */
-  margin-top: 15vh;
+  /* margin-top: 15vh; */
 }
 
 
 #waterfall {
+  margin-top: 15vh;
   border: 3px solid #000;
+  height: 60vh;
   /* margin-top: 50%; */
 }
 
@@ -68,7 +73,6 @@ body {
   background-image: url('bg/sunnyday2.gif');
   background-size: cover;
   height: 100vh;
-  /* padding: 0; */
   margin-top: 15vh;
 }
 
@@ -79,9 +83,7 @@ body {
   background-image: url('bg/clothesline-in-front-of-house.gif');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vh;
-  /* padding: 0; */
-  margin-top: 15vh;
+  height: 100vh;
 }
 
 #drip {
@@ -91,7 +93,7 @@ body {
 /************ WATEER **************/
 
 .page-five {
-    background-color: black;
+    background-color: gray;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -117,14 +119,23 @@ body {
 
 #rundeer {
   position: absolute;
-  width: 20%;
+  width: 70%;
   z-index: 2;
+}
+
+#gray-water {
+  position: fixed;
+  /* z-index: 2; */
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 /************ Title **************/
 .title-pg {
   background-color: #111;
-
   text-align: center;
 }
 
@@ -158,7 +169,67 @@ body {
 .lighthouse {
   background-image: url('bg/lighthouse.gif');
   background-size: cover;
-  width: 100vh;
+  height: 100vh;
   margin: 0 auto;
   /* padding: 0; */
+}
+
+/* #lighthouse-bottom {
+  position: absolute;
+} */
+
+#tinygrass {
+  position: absolute;
+  opacity: 0.5;
+  bottom: 28vh;
+  right: 10vh;
+}
+
+/************ GRASS**************/
+.grass-deer {
+  background-image: url('bg/grass.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#deerstand {
+  display: block;
+  position: absolute;
+  height: 50vh;
+  bottom: 15vh;
+  right: 20vh;
+  opacity: 0;
+  transition: 2s;
+}
+
+#deerstand:hover {
+  opacity: 1;
+}
+
+#runaway {
+  display: none;
+  position: absolute;
+  height: 140vh;
+  bottom: 3vh;
+  right: -27vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#runaway:hover {
+  opacity: 0.2;
+  transition: 6s;
+}
+
+/************ ROAD**************/
+
+.road {
+  background-image: url('bg/li-rd2.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+
 }
